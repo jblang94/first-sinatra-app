@@ -11,6 +11,7 @@ end
 
 # new.erb -> HTTP GET: Shows the form for creating a new message
 get '/messages/new' do
+  @message = Message.new
   erb :'messages/new'
 end
 
